@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Carlos Mendez | Contacto</title>
+    <meta name="description"
+        content="Información de contacto de Carlos Mendez, desarrollador web con experiencia en HTML, CSS y JavaScript.">
 </head>
 
 <body>
@@ -28,6 +30,34 @@
             <p>Teléfono: +503 7402-1140</p>
             <p><a href="https://www.linkedin.com/in/carlos4work/" target="_blank">LinkedIn</a></p>
             <p><a href="https://github.com/CrlsMenz" target="_blank">GitHub</a></p>
+
+            <form action="https://formspree.io/f/xoedlowj" method="POST">
+                <fieldset>
+                    <legend>Datos de contacto</legend>
+
+                    <label for="name">Nombre Completo:</label>
+                    <input type="text" id="name" name="nombre" required>
+                    <br><br>
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                    <br><br>
+                    <label for="asunto">Asunto:</label>
+                    <select id="asunto" name="asunto" required>
+                        <option value="">Seleccione un asunto</option>
+                        <option value="consulta">Oferta de empleo</option>
+                        <option value="sugerencia">Propuesta de proyecto</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <br><br>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    <br><br>
+                    <input type="checkbox" id="aceptar" name="aceptar" required>
+                    <label for="aceptar">Acepto que me contacten</label>
+                </fieldset>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
         </section>
     </main>
 
