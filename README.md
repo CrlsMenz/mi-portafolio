@@ -55,6 +55,10 @@ repositorio [bitacora-fullstack](https://github.com/tu-usuario/bitacora-fullstac
 
 ### Semana 2
 - ✅ Diseñe mi portafolio en github y subi mi primera pagina web sobre mi.
+- ✅ Inclui elementos de estructura semantica a mi index.html.
+- ✅ Cree otros dos archivos html (contacto.html y proyectos.html) donde inclui el uso de imagenes, listas y tablas.
+- ✅ Agregue a contacto.html un formulario.
+- ✅ Utilice el sitio W3C para corregir errores y validar el SEO de mis paginas web.
 - ...
 
 ---
