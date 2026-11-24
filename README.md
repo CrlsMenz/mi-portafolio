@@ -34,7 +34,7 @@ repositorio [bitacora-fullstack](https://github.com/tu-usuario/bitacora-fullstac
 ## 📈 Progreso del curso
 
 - [x] Fundamentos de la web
-- [ ] HTML y estructura semántica
+- [x] HTML y estructura semántica
 - [ ] CSS, diseño responsivo y UX
 - [ ] JavaScript y Front-end
 - [ ] React y buenas practicas
@@ -59,8 +59,11 @@ repositorio [bitacora-fullstack](https://github.com/tu-usuario/bitacora-fullstac
 - ✅ Cree otros dos archivos html (contacto.html y proyectos.html) donde inclui el uso de imagenes, listas y tablas.
 - ✅ Agregue a contacto.html un formulario.
 - ✅ Utilice el sitio W3C para corregir errores y validar el SEO de mis paginas web.
-- ...
+- 📌 **Siguiente paso:** empezar con CSS.
 
+### Semana 3
+- ✅ Cree la carpeta css y mi primer hoja de estilos para mi sitio web.
+-
 ---
 
 
