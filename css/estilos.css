@@ -10,15 +10,30 @@ img {
 }
 
 :root {
-    --color-principal: #3295e6;
-    --color-secundario: #6abcff;
-    --color-accento: #2dceff;
-    --color-fondo: #30343a;
-    --color-texto: #ffffff;
+    --color-principal: #0057B6;
+    --color-secundario: #426FFF;
+    --color-acento: #EFC90C;
+    --color-fondo: #EAF6FF;
+    --color-texto: #272525;
+}
+
+header {
+    background: var(--color-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    margin: 0;
 }
 
 body {
-    font-family: 'Overlock SC', 'Aboreto', cursive, sans-serif;
+    font-family: 'PT Sans Caption', 'Xmind', cursive, sans-serif;
     font-size: 16px;
     text-align: justify;
     background-color: var(--color-fondo);
@@ -31,7 +46,7 @@ h1,
 h2,
 h3 {
     color: var(--color-principal);
-    font-family: 'Aboreto', cursive;
+    font-family: 'Xmind', cursive;
     margin: 10px;
     padding: 10px;
     text-align: center;
@@ -49,27 +64,23 @@ a {
 }
 
 
-
 figcaption {
     text-align: center;
     font-style: italic;
     margin-top: 5px;
 }
 
-nav {
-    background-color: var(--color-principal);
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-}
-
 nav ul {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 1.5rem;
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+nav a {
+    color: #FFFFFF;
 }
 
 caption {
@@ -83,15 +94,22 @@ table {
     text-align: center;
     margin-bottom: 20px;
     align-items: center;
-    border: 1px solid var(--color-accento);
+    border: 1px solid var(--color-acento);
+}
+
+#sobre-mi div{
+    display: flex;
+    align-items: center;
 }
 
 .mi-imagen {
     max-width: 100%;
     height: auto;
-    display: block;
     margin: 0 auto;
     align-items: center;
+    border-radius: 50%;
+    border: 5px solid var(--color-acento);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
 }
 
 form {
@@ -105,7 +123,7 @@ form {
 }
 
 fieldset {
-    border: 1px solid var(--color-accento);
+    border: 1px solid var(--color-acento);
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 15px;
@@ -116,64 +134,110 @@ legend {
     color: var(--color-principal);
 }
 
-select,textarea,input[type="text"],
+select,
+textarea,
+input[type="text"],
 input[type="email"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid var(--color-accento);
+    border: 1px solid var(--color-acento);
     border-radius: 5px;
     box-sizing: border-box;
-    font-family: 'Overlock SC', 'Aboreto', cursive, sans-serif;
+    font-family: 'PT Sans Caption', 'Xmind', cursive, sans-serif;
     font-size: 16px;
 }
 
 button[type="submit"] {
     background-color: var(--color-principal);
-    color: var(--color-texto);
+    color: #FFFFFF;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-family: 'Overlock SC', 'Aboreto', cursive, sans-serif;
+    font-family: 'PT Sans Caption', 'Xmind', cursive, sans-serif;
     font-size: 16px;
 }
 
 footer {
-    background-color: var(--color-principal);
-    color: var(--color-texto);
-    text-align: center;
-    margin-top: 20px;
-    border-radius: 10px;
+    background: var(--color-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+footer p {
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer a:hover {
+    color: var(--color-acento);
 }
 
 .destacado {
-    color: var(--color-accento);
+    color: var(--color-secundario);
     padding: 10px;
     border-radius: 5px;
 }
 
 .contenedor {
- width: 90%;
- max-width: 1100px; 
- margin: 0 auto;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .tarjeta {
- background: var(--color-fondo);
- padding: 1.5rem;
- border: 1px solid var(--color-accento);
- border-radius: 12px;
- margin-bottom: 1.5rem;
- box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    background: var(--color-fondo);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
 }
 
 .boton {
- display: inline-block;
- padding: 0.75rem 1.5rem;
- background: var(--color-principal);
- color: var(--color-texto);
- border-radius: 8px;
- font-weight: 600;
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: var(--color-principal);
+    color: #FFFFFF;
+    white-space: nowrap;
+    border-radius: 8px;
+    font-weight: 600;
 }
-.boton:hover { background: var(--color-secundario); }
+
+.boton:hover {
+    color: var(--color-acento);
+}
+
+#habilidades ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    list-style: none;
+    padding: 0;
+}
+
+#habilidades li {
+    background: var(--color-principal);
+    color: #FFFFFF;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
